@@ -1,20 +1,21 @@
-@import url('./reset.scss');
-@import url('./global.scss');
+@use './reset';
+@use './global';
 
-@import url('./sections/footer.scss');
+@use './sections/header';   
 
-@import url('./sections/hero.scss');
+@use './sections/hero';   
 
-@import url('./sections/tour.scss');
+@use './sections/tour';   
 
-@import url('./sections/programm.scss');
+@use './sections/programm';  
 
-@import url('./sections/popular.scss');
+@use './sections/popular';  
 
-@import url('./sections/blog.scss');
+@use './sections/blog';    
 
-@import url('./sections/photo.scss');
+@use './sections/photo';    
 
-@import url('./sections/forma.scss');
+@use './sections/forma';    
+   
+@use './sections/footer';
 
-@import url('./sections/footer.scss');

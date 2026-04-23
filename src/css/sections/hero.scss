@@ -1,0 +1,39 @@
+.container {
+    display: flex;
+}
+
+.hero {
+    background-image: url(/src/assets/img/back-hero.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    &__title-text {
+        font-weight: 700;
+        font-size: 50px;
+        line-height: 150%;
+        letter-spacing: 0.02em;
+        color: #fdfdfd;
+        padding: 463px 0 41px 0;
+        text-transform: uppercase;
+    }
+
+    &__checklist {
+        display: flex;
+        flex-direction: row;
+        gap: 24px;
+        justify-content: center;
+        padding-bottom: 122px;
+    }
+
+    &__checklist-text {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    &__checklist-comment {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 150%;
+        color: #fdfdfd;
+    }
+}
