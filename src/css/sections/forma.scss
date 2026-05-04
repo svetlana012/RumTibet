@@ -1,0 +1,94 @@
+.forma {
+    
+    
+    & .container {
+        max-width: 1180px;
+        height: 196px;
+        border-radius: 6px;
+        box-shadow: 0 0 15px 0 rgba(24, 18, 30, 0.12);
+        background: #fdfdfd;
+        gap: 64px;
+        transform: translateY(98px);        
+    }
+
+    &__text {
+
+        display: flex;
+        gap: 8px;
+        flex-direction: column;
+        padding-top: 40px;
+        padding-left: 100px;
+
+        &-comment {
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 111%;
+            color: var(--color-yellow);
+        }
+    }
+
+    &__input {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+
+        &-text {
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+            padding-top: 40px;
+
+            &-email {
+                font-family: var(--font-family);
+                font-weight: 600;
+                font-size: 16px;
+                line-height: 125%;
+                color: #18121e;
+            }
+
+            &-form {
+                display: flex;
+                gap: 16px;
+            }
+
+            &-form-email {
+                border-radius: 4px;
+                padding: 0px 16px;
+                width: 280px;
+                height: 44px;
+                font-weight: 300;
+                font-size: 14px;
+                line-height: 143%;
+                color: var(--color-dark-green);
+            }
+
+            &-form-email-btn {
+                border-radius: 4px;
+                padding: 12px 24px;
+                width: 240px;
+                height: 44px;
+                background: var(--color-back-btn);
+
+                &-text {
+                    font-weight: 600;
+                    font-size: 16px;
+                    line-height: 125%;
+                    letter-spacing: 0.01em;
+                    color: var(--color-white);
+                }
+            }
+        }
+    }
+
+
+
+    &__input-text-politic {
+        font-family: var(--font-family);
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 129%;
+        color: var(--color-dark-green);
+    }
+
+
+}

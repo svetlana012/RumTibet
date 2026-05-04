@@ -1,13 +1,16 @@
-.container {
-    display: flex;
-    justify-content: space-between;  
-      
-}
-
-.header {        
-    justify-content: space-between;
-    position: fixed;
+.header {
+    
+    position: absolute;
+    top: 0;
+    left: 0;
     width: 100%;
+    z-index: 2;
+    padding: 16px 0;
+
+    & .container {
+        display: flex;
+        justify-content: space-between;        
+    }    
 
     &__nav-btn {
         display: flex;
@@ -53,10 +56,11 @@
         height: 44px;
         border-radius: 4px;
         padding: 12px 24px;
+        cursor: pointer;
     }
 
     &__burger {
         display: none;
-    }    
+    }
 
 }

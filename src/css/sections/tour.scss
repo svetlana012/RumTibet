@@ -1,0 +1,60 @@
+.tour {
+
+    &__container {
+        display: flex;
+    }
+
+    &__img {
+        padding-top: 100px;
+        margin-bottom: 100px;
+        max-width: 480px;
+        max-height: 526px;
+    }
+
+    &__title-comment {
+        padding-top: 164px;
+        padding-left: 120px;
+    }
+
+    &__title-comment-text {
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 83%;
+        color: var(--color-yellow);
+        padding-bottom: 8px;
+    }
+
+    &__title-text {
+        font-weight: 800;
+        font-size: 32px;
+        line-height: 120%;
+        color: #18121e;
+        padding-bottom: 40px;
+    }
+
+    &__text {
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 150%;
+        color: #18121e;
+    }
+
+    &__btn {
+        padding-top: 40px;
+    }
+
+    &__btn-text {
+        display: block;
+        color: var(--color-white);
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 125%;
+        background-color: var(--color-back-btn);
+        max-width: 200px;
+        max-height: 52px;
+        border-radius: 4px;
+        padding: 12px 24px;
+        cursor: pointer;
+    }
+
+}
