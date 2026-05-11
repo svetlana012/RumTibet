@@ -1,16 +1,16 @@
 .header {
-    
+
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     z-index: 2;
-    padding: 16px 0;
+    padding: 16px 0;    
 
     & .container {
         display: flex;
-        justify-content: space-between;        
-    }    
+        justify-content: space-between;
+    }
 
     &__nav-btn {
         display: flex;
@@ -61,6 +61,40 @@
 
     &__burger {
         display: none;
+    }
+
+    @media screen and (max-width: 1200px) {
+        &__nav {
+            gap: 24px;
+        }
+
+        &__list {
+            display: none;
+        }
+
+        &__btn {
+            display: none;            
+        }
+
+        &__list-link {
+            font-size: 16px;
+        }
+
+        &__burger {
+            display: flex;
+        }
+    }
+
+    @media screen and (max-width: 576px) {
+
+        
+
+        &__logo {
+            display: flex;
+            width: 84px;
+            height: 44px;
+            
+        }
     }
 
 }

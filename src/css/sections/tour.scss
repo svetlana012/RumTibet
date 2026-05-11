@@ -11,6 +11,10 @@
         max-height: 526px;
     }
 
+    &__img-phone {
+        display: none;
+    }
+
     &__title-comment {
         padding-top: 164px;
         padding-left: 120px;
@@ -28,7 +32,7 @@
         font-weight: 800;
         font-size: 32px;
         line-height: 120%;
-        color: #18121e;
+        color: var(--color-dark-green);
         padding-bottom: 40px;
     }
 
@@ -36,7 +40,7 @@
         font-weight: 400;
         font-size: 18px;
         line-height: 150%;
-        color: #18121e;
+        color: var(--color-dark-green);
     }
 
     &__btn {
@@ -55,6 +59,83 @@
         border-radius: 4px;
         padding: 12px 24px;
         cursor: pointer;
+    }
+
+    @media screen and (max-width: 1200px) {
+
+        & .container {
+            flex-direction: column;
+            margin: 80px 15px;
+        }
+
+        &__img {
+            padding-top: 0;
+            margin-left: auto;
+            margin-right: auto;
+            display: block;
+        }
+
+        &__title-comment {
+            padding-top: 0;
+            padding-left: 0;
+        }
+
+        &__btn {
+            display: flex;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    }
+
+    @media screen and (max-width: 576px) {
+
+        & .container {
+            padding: 50px 16px;
+            gap: 40px;
+        }
+
+        &__title-comment-text {
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 125%;
+            color: var(--color-yellow);
+        }
+
+        &__title-text {
+            font-weight: 800;
+            font-size: 24px;
+            line-height: 120%;
+            color: var(--color-dark-green);
+        }
+
+        &__text {
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 150%;
+            color: #18121e;
+        }
+
+        &__btn {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: auto;
+            order: 1;
+        }
+
+        &__img {
+            display: none;
+        }
+
+        &__img-phone {
+            width: 358px;
+            height: 416px;
+            display: block;
+            order: 2;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
     }
 
 }

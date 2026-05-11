@@ -62,6 +62,10 @@
         max-height: 52px;
     }
 
+    &__butn-search-phone {
+        display: none;
+    }
+
     &__butn-search {
         display: flex;
         text-align: center;
@@ -78,5 +82,80 @@
         height: 52px;
         border-radius: 4px;
         padding: 16px 36px;
+    }
+
+    @media screen and (max-width: 1200px) {
+        &__title-text {
+            font-size: 35px;
+            padding: 360px 0 32px 0;
+        }
+
+        &__checklist {
+            display: grid;
+            width: 100%;
+            max-width: 1180px;
+            height: auto;
+            padding: 20px;
+            grid-template-columns: repeat(2, 1fr);
+
+        }
+
+        &__checklist-comment {
+            width: auto;
+        }
+
+        &__input-text {
+            max-width: none;
+            width: 270px;
+        }
+    }
+
+    @media screen and (max-width: 768px) {
+
+        &__title-text {
+            font-size: 25px;
+        }
+
+        &__input-text {
+            width: 100%;
+            font-size: 14px;
+        }
+
+        &__checklist-comment {
+            font-size: 12px;
+        }
+
+        &__butn-search-text {
+            font-size: 14px;
+        }
+    }
+
+    @media screen and (max-width: 576px) {
+
+        &__title {
+            gap: 32px;
+        }
+
+        &__title-text {
+            font-size: 28px;
+        }
+
+        &__checklist {
+            display: none;
+        }
+
+        &__butn-search-phone {
+            display: block;
+            color: var(--color-back-btn);
+            font-weight: 700;
+            font-size: 16px;
+            line-height: 125%;
+            background-color: var(--color-white);
+            max-width: 213px;
+            height: 52px;
+            border-radius: 4px;
+            padding: 16px 36px;
+            margin-bottom: 50px;
+        }
     }
 }

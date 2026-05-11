@@ -31,6 +31,7 @@
         display: flex;
         flex-direction: column;
         gap: 8px;
+        
 
         &-text {
             display: flex;
@@ -60,6 +61,9 @@
                 font-size: 14px;
                 line-height: 143%;
                 color: var(--color-dark-green);
+                background-color: var(--color-back);
+                border: none;
+                outline: none;
             }
 
             &-form-email-btn {
@@ -90,5 +94,16 @@
         color: var(--color-dark-green);
     }
 
+    @media screen and (max-width: 1200px) {
+        
+    }
+
+    @media screen and (max-width: 768px) {
+        
+    }
+
+    @media screen and (max-width: 579px) {
+        
+    }
 
 }
