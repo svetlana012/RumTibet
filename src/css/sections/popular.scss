@@ -33,6 +33,15 @@
         display: flex;
         gap: 20px;
         position: relative;
+
+        
+    }
+
+    &__item-anim {
+        &:hover {
+            transform: translateY(-100px);
+            transition: 1s;            
+        }
     }
 
     &__item-rating {
