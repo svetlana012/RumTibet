@@ -153,9 +153,24 @@
         }
 
         &__item {
-            flex: 0 0 auto;
-            scroll-snap-align: start;
+            flex-direction: column;
+            border-radius: 10px;            
+            min-width: 285px;            
+            width: 100%;
+            gap: 0;
+            
+            &-title {
+                padding-top: 16px;
+            }
         }
+        &__item-img {
+            display: none;
+        }
+
+        &__item-img-phone {
+            display: flex;            
+        }
+
     }
 
     @media screen and (max-width: 768px) {

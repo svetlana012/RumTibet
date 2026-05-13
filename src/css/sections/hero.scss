@@ -33,6 +33,11 @@
         flex-wrap: wrap;
     }
 
+    &__checklist-input {
+        display: flex;
+        flex-direction: row;
+    }
+
     &__checklist-text {
         display: flex;
         flex-direction: column-reverse;
@@ -78,7 +83,7 @@
         font-size: 16px;
         line-height: 125%;
         background-color: var(--color-white);
-        max-width: 213px;
+        min-width: 213px;
         height: 52px;
         border-radius: 4px;
         padding: 16px 36px;
@@ -106,7 +111,12 @@
 
         &__input-text {
             max-width: none;
-            width: 270px;
+            width: 100%;
+        }
+
+        &__butn-search {
+            width: 100%;
+            display: block;
         }
     }
 

@@ -32,12 +32,18 @@
     &__list {
         display: flex;
         gap: 20px;
-        position: relative;
-
+        position: relative; 
         
+        
+        &-item {
+            position: relative;
+            overflow: hidden;
+            scroll-snap-align: start;
+        }
     }
 
-    &__item-anim {
+    &__item-anim {        
+
         &:hover {
             transform: translateY(-100px);
             transition: 1s;            
@@ -47,7 +53,8 @@
     &__item-rating {
         position: absolute;
         display: flex;
-        transform: translate(315px, -460px);
+        right: 0;
+        top: 50px;
         border-radius: 4px 0 0 4px;
         padding: 4px 8px;
         width: 65px;
@@ -68,10 +75,10 @@
     &__item-text {
         position: absolute;
         display: flex;
-        transform: translateY(-90px);
+        bottom: 0;
         border-radius: 0 0 32px 32px;
-        width: 380px;
-        height: 90px;
+        width: 100%;
+        height: 200px;        
         backdrop-filter: blur(6px);
         background: rgba(255, 255, 255, 0.2);
         flex-direction: column;
@@ -79,18 +86,22 @@
         color: var(--color-white);
         padding-left: 32px;
         justify-content: center;
+        transform: translateY(60%);
     }
 
     &__item-title {
         font-weight: 700;
         font-size: 24px;
-        line-height: 120%
+        line-height: 120%;        
+        padding-top: 20px;
+        padding-bottom: 30px;
     }
 
     &__item-comment {
         font-weight: 400;
         font-size: 14px;
         line-height: 129%;
+        height: 100%;
     }
 
     &__item-price {
@@ -135,10 +146,14 @@
     @media screen and (max-width: 1200px) {
 
         &__list {
-            overflow-x: auto;
-            -webkit-overflow-scrolling: touch;
+            overflow-x: auto;            
             scroll-snap-type: x mandatory;
             flex-wrap: nowrap;
+            scroll-behavior: smooth;            
+        }
+        
+        &__list-item {
+            flex: 0 0 auto;
         }
     }
 
