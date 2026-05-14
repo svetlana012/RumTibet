@@ -89,5 +89,13 @@
         }
     }
 
-    @media screen and (max-width: 579px) {}
+    @media screen and (max-width: 579px) {
+        &__text-comment {
+            font-size: 16px;
+        }
+
+        &__text-title {
+            font-size: 24px;
+        }
+    }
 }

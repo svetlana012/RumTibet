@@ -16,6 +16,9 @@
         color: #fdfdfd;
         padding: 463px 0 41px 0;
         text-transform: uppercase;
+        height: auto; // Добавьте - автоматическая высота
+        word-wrap: break-word; // Перенос слов
+        white-space: normal;
     }
 
     &__checklist {
@@ -55,7 +58,7 @@
 
     &__input-text {
         padding: 14px 16px;
-        background: transparent;
+        background: url(/src/assets/img/ep_arrow-down.svg) no-repeat right 15px center;
         color: var(--color-white);
         font-weight: 700;
         font-size: 16px;
@@ -148,6 +151,15 @@
 
         &__title-text {
             font-size: 28px;
+            padding: 234px 29px 32px 16px;
+            font-weight: 700;
+            font-size: 28px;
+            line-height: 150%;
+            height: auto;
+            overflow: visible; 
+            white-space: normal; 
+            word-break: break-word; 
+            max-width: 100%;
         }
 
         &__checklist {
