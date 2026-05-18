@@ -21,17 +21,17 @@
         white-space: normal;
     }
 
-    &__checklist {
+    &__form {
         display: flex;
         flex-direction: row;
         gap: 24px;
-        justify-content: center;
+        padding: 40px 42px;
         margin-bottom: 82px;
         backdrop-filter: blur(6px);
         background: rgba(255, 255, 255, 0.2);
         border-radius: 10px;
-        width: 1180px;
-        height: 161px;
+        max-width: 1180px;
+        min-height: 161px;
         align-content: center;
         flex-wrap: wrap;
     }
@@ -44,6 +44,7 @@
     &__checklist-text {
         display: flex;
         flex-direction: column-reverse;
+        flex: 1;
     }
 
     &__checklist-comment {
@@ -53,7 +54,7 @@
         color: #fdfdfd;
         padding: 8px 0px;
         width: 270px;
-        height: 21px;
+
     }
 
     &__input-text {
@@ -66,27 +67,23 @@
         outline: none;
         border: 1px solid #e1e3e4;
         border-radius: 8px;
-        max-width: 270px;
-        max-height: 52px;
+
     }
 
-    &__butn-search-phone {
+    &__type-submit-phone {
         display: none;
     }
 
-    &__butn-search {
-        display: flex;
+    &__type-submit {        
         text-align: center;
-    }
-
-    &__butn-search-text {
+        flex: 1;
+        width: 100%;
         display: block;
         color: var(--color-back-btn);
         font-weight: 700;
         font-size: 16px;
         line-height: 125%;
         background-color: var(--color-white);
-        min-width: 213px;
         height: 52px;
         border-radius: 4px;
         padding: 16px 36px;
@@ -98,7 +95,7 @@
             padding: 360px 0 32px 0;
         }
 
-        &__checklist {
+        &__form {
             display: grid;
             width: 100%;
             max-width: 1180px;
@@ -117,7 +114,7 @@
             width: 100%;
         }
 
-        &__butn-search {
+        &__type-submit {
             width: 100%;
             display: block;
         }
@@ -138,14 +135,14 @@
             font-size: 12px;
         }
 
-        &__butn-search-text {
+        &__type-submit {
             font-size: 14px;
         }
     }
 
     @media screen and (max-width: 576px) {
 
-        &__title {
+        &__content {
             gap: 32px;
         }
 
@@ -156,17 +153,17 @@
             font-size: 28px;
             line-height: 150%;
             height: auto;
-            overflow: visible; 
-            white-space: normal; 
-            word-break: break-word; 
+            overflow: visible;
+            white-space: normal;
+            word-break: break-word;
             max-width: 100%;
         }
 
-        &__checklist {
+        &__form {
             display: none;
         }
 
-        &__butn-search-phone {
+        &__type-submit-phone {
             display: block;
             color: var(--color-back-btn);
             font-weight: 700;

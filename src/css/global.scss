@@ -51,11 +51,19 @@ html {
     flex: 1;
 }
 
-select {    
+select {
     appearance: none;
     -webkit-appearance: none;
     -moz-appearance: none;
-    padding: 10px 40px 10px 15px;    
+    padding: 10px 40px 10px 15px;
     background-color: white;
     border: 1px solid #ccc;
+}
+
+h2 {
+    font-weight: 800;
+    font-size: 32px;
+    line-height: 120%;
+    color: #18121e;
+    padding-bottom: 40px;
 }

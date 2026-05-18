@@ -1,4 +1,4 @@
-.forma {
+.form {
 
 
     & .container {
@@ -11,20 +11,26 @@
         transform: translateY(98px);
     }
 
-    &__text {
-
+    &__title {
         display: flex;
         gap: 8px;
         flex-direction: column;
         padding-top: 40px;
         padding-left: 100px;
 
-        &-comment {
-            font-weight: 400;
-            font-size: 18px;
-            line-height: 111%;
-            color: var(--color-yellow);
+        &-text {
+            font-weight: 800;
+            font-size: 26px;
+            line-height: 120%;
+            color: #18121e;
         }
+    }
+
+    &__comment {
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 111%;
+        color: var(--color-yellow);
     }
 
     &__input {
@@ -32,6 +38,13 @@
         flex-direction: column;
         gap: 8px;
 
+        &-email {
+            font-family: var(--font-family);
+            font-weight: 600;
+            font-size: 16px;
+            line-height: 125%;
+            color: #18121e;
+        }
 
         &-text {
             display: flex;
@@ -39,20 +52,14 @@
             gap: 8px;
             padding-top: 40px;
 
-            &-email {
-                font-family: var(--font-family);
-                font-weight: 600;
-                font-size: 16px;
-                line-height: 125%;
-                color: #18121e;
-            }
+
 
             &-form {
                 display: flex;
                 gap: 16px;
             }
 
-            &-form-email {
+            &-email {
                 border-radius: 4px;
                 padding: 0px 16px;
                 width: 280px;
@@ -65,26 +72,23 @@
                 border: none;
                 outline: none;
             }
-
-            &-form-email-btn {
-                border-radius: 4px;
-                padding: 12px 24px;
-                width: 240px;
-                height: 44px;
-                background: var(--color-back-btn);
-
-                &-text {
-                    font-weight: 600;
-                    font-size: 16px;
-                    line-height: 125%;
-                    letter-spacing: 0.01em;
-                    color: var(--color-white);
-                }
-            }
         }
     }
 
-
+    &__btn {
+        display: flex;
+        border-radius: 4px;
+        padding: 12px 24px;
+        width: 240px;
+        height: 44px;
+        background: var(--color-back-btn);
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 125%;
+        letter-spacing: 0.01em;
+        color: var(--color-white);
+        justify-content: center;
+    }
 
     &__input-text-politic {
         font-family: var(--font-family);
@@ -98,15 +102,15 @@
 
         & .container {
             transform: translateY(0);
-            margin: 50px 16px;            
+            margin: 50px 16px;
             padding: 0;
             width: auto;
             flex-direction: column;
             gap: 18px;
-            align-items: center;                       
+            align-items: center;
         }
 
-        &__text {
+        &__title {
             padding-top: 24px;
             padding-left: 0;
             align-items: center;
@@ -120,33 +124,34 @@
             &-text {
                 width: 100%;
                 padding-top: 0;
+
+                &-email {
+                    width: 100%;
+                }
             }
 
             &-text-form {
                 flex-direction: column;
                 align-items: center;
-
-                &-email {
-                    width: 100%;
-
-                    &-btn {
-                        width: 100%;
-                    }
-                }
             }
 
             &-text-politic {
                 width: 100%;
                 text-align: center;
             }
-        }        
+        }
+
+        &__btn {
+            width: 100%;
+            
+        }
 
         @media screen and (max-width: 579px) {
-            
+
             &__text-title {
                 text-align: center;
             }
         }
 
     }
-}    
+}

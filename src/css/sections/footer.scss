@@ -71,6 +71,14 @@
         text-decoration: underline;
         text-decoration-skip-ink: none;
         color: var(--color-primary-white);
+
+        &-email {
+            color: var(--color-primary-white);
+        }
+
+        &-phone {
+            color: var(--color-primary-white);
+        }
     }
 
     &__title {
@@ -181,7 +189,7 @@
 
     }
 
-    &__copi {
+    &__copyright {
 
         & .container {
             display: flex;
@@ -194,8 +202,6 @@
         background: black;
         padding: 24px 0;
         flex-direction: row;
-
-
 
         &-name-company {
             font-family: var(--font-family);
