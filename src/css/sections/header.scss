@@ -68,7 +68,7 @@
             display: none;
         }
 
-        &__btn {
+        &__btn-text {
             display: none;            
         }
 
@@ -81,7 +81,10 @@
         }
     }
 
-    @media screen and (max-width: 576px) {        
+    @media screen and (max-width: 576px) {    
+        &__btn-text {
+            display: none;
+        }    
 
         &__logo {
             display: flex;

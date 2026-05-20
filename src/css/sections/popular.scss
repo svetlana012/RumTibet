@@ -27,6 +27,7 @@
             line-height: 120%;
             text-align: center;
             color: #18121e;
+            padding-bottom: 0;
         }
     }
 
@@ -158,6 +159,12 @@
         }
     }
 
+    @media screen and (max-width: 768px) {
+        &__title {
+            padding-top: 50px;
+        }
+    }
+
     @media screen and (max-width: 576px) {
 
         & .container {
@@ -168,6 +175,7 @@
         &__title {
             padding: 0;
             align-items: flex-start;
+            
 
             &-comment {
                 font-size: 16px;

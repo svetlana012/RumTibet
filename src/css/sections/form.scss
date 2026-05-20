@@ -146,6 +146,13 @@
             
         }
 
+        @media screen and (max-width: 768px) {
+
+            &__title {
+                padding: 24px;
+            }
+        }
+
         @media screen and (max-width: 579px) {
 
             &__text-title {

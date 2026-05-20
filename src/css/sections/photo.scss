@@ -10,8 +10,8 @@
         display: flex;
         padding-top: 80px;
         gap: 8px;
-        flex-direction: column;
-        padding-bottom: 40px;
+        flex-direction: column; 
+        width: 100%;       
 
         &-comment {
             font-weight: 400;
@@ -26,7 +26,7 @@
             font-size: 32px;
             line-height: 120%;
             text-align: center;
-            color: var(--color-back-btn);
+            color: var(--color-dark-green);
         }
 
     }

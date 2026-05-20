@@ -14,6 +14,7 @@
         padding-top: 80px;
         gap: 8px;
         flex-direction: column;
+        width: 100%;
 
         &-comment {
             font-weight: 400;
@@ -35,8 +36,7 @@
     &__list {
         grid-template-columns: repeat(2, 1fr);
         display: grid;
-        padding-top: 40px;
-
+        max-width: 100%;
         gap: 20px;
     }
 
@@ -190,6 +190,7 @@
 
         &__title {
             align-items: flex-start;
+            padding-top: 50px;
         }
 
         &__item {
@@ -238,6 +239,7 @@
 
         &__title {
             padding-top: 50px;
+            text-align: left;
         }
 
         &__title-comment {

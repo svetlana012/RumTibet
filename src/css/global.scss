@@ -66,4 +66,8 @@ h2 {
     line-height: 120%;
     color: #18121e;
     padding-bottom: 40px;
+
+    @media screen and (max-width: 576px) {
+        font-size: 24px;
+    }
 }
